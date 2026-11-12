@@ -1,0 +1,22 @@
+# 本地配置（含密钥），禁止提交到 GitHub
+config.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 每日生成的 GitHub Pages 推文页（不入库，由 workflow 上传到 Pages）
+pages/
+# 已推送论文记录（本地不提交，由 workflow 用 git add -f 强制提交回仓库）
+last_pushed.json
+
+# 待发消息由工作流显式保存，不含凭据
+pending_delivery.json
+*.tmp
+
+# 本地端到端测试产物
+local-test/
+local_test_input.json
+local_test_run.py
